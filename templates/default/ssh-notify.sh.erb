@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Change these two lines:
-sender="<%= node[login-alert][sender] %>"
-recepient="<%= node[login-alert][recepient] %>"
+sender="<%= node['login-alert']['sender'] %>"
+recepient="<%= node['login-alert']['recepient'] %>"
 
 if [ "$PAM_TYPE" != "close_session" ]; then
     host="`hostname`"
